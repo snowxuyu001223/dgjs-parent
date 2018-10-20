@@ -1,0 +1,12 @@
+.idea/
+.settings/
+.project
+.classpath
+*.iml
+/dgjs-api/target/
+/dgjs-common/target/
+/dgjs-dao/target/
+/dgjs-domain/target/
+/dgjs-service/target/
+
+/.idea/vcs.xml

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.muteng.dgjs.dao.impl.UserDaoImpl">
+    <resultMap id="getMap" type="com.muteng.dgjs.domain.User">
+    </resultMap>
+    
+    <select id="getAllUser" resultMap="getMap">
+        select * from t_user
+    </select>
+
+    <insert id="insert" parameterType="com.muteng.dgjs.domain.User">
+        insert into t_user (create_name, create_time, update_name, update_time, user_name, pass_word, address, phone) values
+        (#{createName}, #{createTime}, #{updateName}, #{updateTime}, #{userName}, #{passWord}, #{address}, #{phone})
+    </insert>
+
+</mapper>
